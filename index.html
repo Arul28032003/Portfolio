@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arul's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo1.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Ghost guide element -->
+    <div class="ghost-container" id="ghost-container">
+        <div class="message-bubble" id="message-bubble"></div>
+        <img src="images/ghost-normal.png" alt="Ghost Guide" id="ghost-image">
+        <div class="zzz-container">
+            <span class="zzz">z</span>
+            <span class="zzz">z</span>
+            <span class="zzz">z</span>
+            <span class="zzz">z</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="navibar">
+            <div class="logo">
+                <img src="images/logo.png" width="70px"> <label for="" id="logo">A-Dev</label>
+            </div>
+            <nav>
+                <ul id="menuitems" >
+                    <li><a href="#home" class="btn">Home</a></li>
+                    <li><a href="#about" class="btn">About</a></li>
+                    <li><a href="#skills" class="btn">Skills</a></li>
+                    <li><a href="#projects" class="btn">Projects</a></li>
+                    <li><a href="#contact" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="Images/main-menu.png" class="menuicon" onclick="menu_toggle()"/> 
+        </div>
+        <div id="ghosthome">
+            <!-- Ghost's Home Image -->
+            <div class="ghost-title">Tinker Home</div>
+    <img src="images/ghost-home.png" alt="Ghost Home" class="ghost-home" id="ghost-home">
+
+        </div>
+        <div class="row">
+            <div class="col1" id="home">
+                <h2>Hello, I'm  <label for=""> Arul</label></h2>
+                <p>Frontend Developer | Python Programmer | Problem Solver</p>
+                <button class="click" onclick="location.href='#projects'">View My Work &rarr;</button>
+            </div>
+            <div class="col1">
+                <div id="ghost"></div>
+                <img src="images/welcoming.png" alt="" width="400px">
+            </div>
+        </div>
+    </div>
+<div class="block">    
+    <div class="small-container ">
+        <div class="row1">
+            <div class="col2" id="about" >
+                <h2>About Me</h2>
+                <img src="Images/profile.png" alt="" width="300px">
+                <p>I am a passionate Frontend Developer with skills in HTML, CSS, JavaScript, and Python. I have built several projects ranging from websites to games and more.</p>
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="block">    
+    <div class="small-container">
+        <div class="row1">
+            <div class="col2" id="skills">
+                <h2>Skills</h2>
+                <img src="Images/code.png" alt="" width="300px">
+                <div class="skills-container">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">Git & GitHub</div>
+                </div> 
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="block" id="projects">    
+    <div class="small-container" >
+        <div class="row1">
+            <div class="col2">
+                <h2>Projects</h2>
+                <img src="Images/project_complete.png" alt="" width="300px">
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Sign Language Recognition System</h3>
+                    <p>A machine learning project for recognizing sign language gestures.</p>
+                    <a href="development.html"class="btn"> View Project &rarr;</a>
+                </div>
+                <div class="project">
+                    <h3>Real-Time News Portal</h3>
+                    <p>A Python-based web scraping project fetching live news updates.</p>
+                    <a href="https://newsweb-prkuhrwxypz25uxetdk8f.streamlit.app/"class="btn"> View Project &rarr;</a>
+                </div>
+                <div class="project">
+                    <h3>AI Assistant HUB</h3>
+                    <p>A fully responsive AI Assistant HUB website using HTML and CSS.</p>
+                    <a href="https://arul28032003.github.io/Ai_service_web/"class="btn"> View Project &rarr;</a>
+                </div>
+                <div class="project">
+                    <h3>Weather App</h3>
+                    <p>A JavaScript app displaying live weather updates.</p>
+                    <a href="https://arul28032003.github.io/Simple_web/"class="btn"> View Project &rarr;</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block"> 
+        <div class="small-container" id="contact">
+            <div class="row1">
+                <div class="col2">
+                    <h2>Contact Me</h2>
+                    <img src="Images/contact_us.png" alt="" width="300px">
+                    <p>Email: <a href="mailto:arulraman77@gmail.com">arulraman77@gmail.com</a></p>
+                    <p>Phone: +91 9444732994</p>
+                    <p>Linkedin: <a href="https://www.linkedin.com/in/arul-r-581ba02b5/">Arul R</a></p>
+                </div>
+            </div>
+        </div>
+</div>
+
+        <footer>
+            <p>&copy; 2024 Arul. All rights reserved.</p>
+        </footer>
+    <script>
+    
+        // Navigation menu toggle
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+    
+        function menu_toggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "400px";
+            } else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <script>
+// Select all necessary DOM elements at the beginning
+const ghostContainer = document.getElementById('ghost-container');
+const ghostImage = document.getElementById('ghost-image');
+const messageBubble = document.getElementById('message-bubble');
+const ghosthomeSection = document.getElementById('ghosthome');
+const zzzContainer = document.querySelector('.zzz-container');
+const aboutSection = document.getElementById('about');
+const projectsSection = document.getElementById('projects');
+const homeSection = document.getElementById('home');
+const skillsSection = document.getElementById('skills');
+const contactSection = document.getElementById('contact');
+
+let currentSection = null;
+let typingTimeout;
+let isAsleep = false;
+
+function typeMessage(message) {
+    clearTimeout(typingTimeout);
+    let i = 0;
+    messageBubble.textContent = '';
+    messageBubble.classList.add('show');
+
+    function typeChar() {
+        if (i < message.length) {
+            messageBubble.textContent += message.charAt(i);
+            i++;
+            typingTimeout = setTimeout(typeChar, 30);
+        }
+    }
+
+    typeChar();
+}
+
+document.addEventListener('mousemove', (e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    ghostContainer.style.left = (x + 20) + 'px';
+    ghostContainer.style.top = (y - 20) + 'px';
+
+    if (isAsleep) {
+        wakeUp();
+    }
+});
+
+const sectionMessages = {
+    about: "Here's where you can learn about Arul's skills and passion for web development.",
+    projects: "Check out Arul's impressive portfolio of web development projects.",
+    home: "Welcome to Arul's portfolio! Explore his skills, projects, and achievements as a frontend developer and tech enthusiast. Let's dive in!",
+    skills: "Arul is skilled in Python, Web Development (HTML, CSS, JavaScript), SQL, and Git/GitHub. He's adept at solving problems with his programming expertise and has a solid understanding of Cloud Computing!",
+    contact: "Want to get in touch? You can reach Arul via email at arulraman77@gmail.com or connect on LinkedIn. Looking forward to hearing from you!",
+    ghosthome: "My Home !!"
+};
+
+function handleSectionHover(section) {
+    return () => {
+        if (currentSection !== section) {
+            currentSection = section;
+            ghostImage.src = 'images/ghost-smile.png';
+            typeMessage(sectionMessages[section]);
+        }
+    };
+}
+
+aboutSection.addEventListener('mouseenter', handleSectionHover('about'));
+projectsSection.addEventListener('mouseenter', handleSectionHover('projects'));
+homeSection.addEventListener('mouseenter', handleSectionHover('home'));
+skillsSection.addEventListener('mouseenter', handleSectionHover('skills'));
+contactSection.addEventListener('mouseenter', handleSectionHover('contact'));
+ghosthomeSection.addEventListener('mouseenter', handleSectionHover('ghosthome'));
+
+document.addEventListener('mousemove', (e) => {
+    const hoveredElement = document.elementFromPoint(e.clientX, e.clientY);
+    if (!aboutSection.contains(hoveredElement) && 
+        !projectsSection.contains(hoveredElement) && 
+        !homeSection.contains(hoveredElement) && 
+        !skillsSection.contains(hoveredElement) && 
+        !contactSection.contains(hoveredElement) && 
+        !ghosthomeSection.contains(hoveredElement) && 
+        currentSection) {
+        currentSection = null;
+        ghostImage.src = 'images/ghost-normal.png';
+        messageBubble.classList.remove('show');
+    }
+});
+
+document.addEventListener('mouseleave', () => {
+    const homeRect = ghosthomeSection.getBoundingClientRect();
+    ghostContainer.style.transition = 'all 1.5s ease';
+    ghostContainer.style.left = `${homeRect.left + homeRect.width / 2 - ghostContainer.offsetWidth / 2}px`;
+    ghostContainer.style.top = `${homeRect.top + homeRect.height / 2 - ghostContainer.offsetHeight / 2}px`;
+    ghostContainer.style.animation = 'none';
+
+    setTimeout(() => {
+        goToSleep();
+    }, 1500);
+});
+
+function goToSleep() {
+    ghostImage.src = 'images/ghost-sleep.png';
+    isAsleep = true;
+    if (zzzContainer) {
+        zzzContainer.style.opacity = 1;
+    }
+    messageBubble.classList.remove('show');
+}
+
+function wakeUp() {
+    ghostImage.src = 'images/ghost-normal.png';
+    isAsleep = false;
+    if (zzzContainer) {
+        zzzContainer.style.opacity = 0;
+    }
+    ghostContainer.style.animation = 'float 5s infinite';
+    ghostContainer.style.transition = 'none';
+}
+
+function updateGhostHomePosition() {
+    if (isAsleep) {
+        const homeRect = ghosthomeSection.getBoundingClientRect();
+        ghostContainer.style.left = `${homeRect.left + homeRect.width / 2 - ghostContainer.offsetWidth / 2}px`;
+        ghostContainer.style.top = `${homeRect.top + homeRect.height / 2 - ghostContainer.offsetHeight / 2}px`;
+    }
+}
+
+window.addEventListener('scroll', updateGhostHomePosition);
+</script>
+</body>
+</html>
